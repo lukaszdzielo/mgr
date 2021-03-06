@@ -1,0 +1,148 @@
+.card__box {
+    position: relative;
+    overflow: hidden;
+    &--image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 0;
+        border-radius: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.01);
+            transition: $transition-base;
+        }
+    }
+    &--body {
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transition: $transition-base;
+        @include media-breakpoint-up(md) {
+            min-height: 400px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            background: $dark;
+            opacity: .5;
+        }
+    }
+    &--title {
+        color: $white;
+        font-weight: $font-weight-bold;
+        @include truncate($font-size:1.5rem, $lines-to-show:2, $static-height: false);
+    }
+    &:hover {
+        @include media-breakpoint-up(lg) {
+            .card__box--image img {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.card__custom1 {
+    &--image {
+        position: relative;
+        overflow: hidden;
+        img {
+            object-fit: cover;
+            transform: scale(1.01);
+            transition: $transition-base;
+        }
+    }
+    &--title {
+        @include truncate($font-size:1.125rem, $lines-to-show:2,  $static-height: false);
+        @include media-breakpoint-up(md) {
+            @include truncate($font-size:1.125rem, $lines-to-show:2);
+        }
+    }
+    &--text {
+        @include truncate($lines-to-show:5, $static-height: false);
+        @include media-breakpoint-up(md) {
+            @include truncate($lines-to-show:5);
+        }
+    }
+    &:hover {
+        .card__custom1--image img {
+            transform: scale(1.05);
+        }
+    }
+    .btn {
+        padding: 15px 30px;
+        border: 0;
+        border-radius: 0;
+        background: shade-color($primary, 15%);
+        color: $white;
+    }
+}
+
+.card__custom2 {
+    overflow: hidden;
+    &--image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.01);
+            transition: $transition-base;
+        }
+    }
+    &--body {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            height: 100%;
+            background: linear-gradient(to top, $dark, transparent);
+            opacity: .5;
+        }
+    }
+    &--title {
+        @include truncate($font-size:1.125rem, $lines-to-show:2, $static-height: false);
+    }
+    &--text {
+        transition: $transition-base;
+        @include truncate($font-size:1rem, $lines-to-show:2, $static-height: false);
+        @include media-breakpoint-up(lg) {
+            @include truncate($lines-to-show:0, $static-height: false);
+        }
+    }
+    &:hover {
+        .card__custom2--image img {
+            transform: scale(1.05);
+        }
+        .card__custom2--text {
+            @include media-breakpoint-up(lg) {
+                @include truncate($lines-to-show:2, $static-height: false);
+            }
+        }
+    }
+}

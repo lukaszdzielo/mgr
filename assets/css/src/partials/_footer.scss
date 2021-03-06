@@ -1,0 +1,36 @@
+footer {
+    color: $white;
+    .navbar-brand {
+        display: block;
+        margin-bottom: 20px;
+        img,
+        svg {
+            height: 70px;
+        }
+    }
+    ul a {
+        display: inline-block;
+        text-decoration: none;
+        transition: $transition-base;
+        &:hover {
+            transform: translateX(5px);
+        }
+    }
+    a, a:hover {
+        color: $white;
+    }
+}
+
+.footer {
+    &--heading {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &__top {
+        background: $primary;
+    }
+    &__bottom {
+        background: shade-color($primary, 15%);
+     }
+}
