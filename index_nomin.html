@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Łukasz Dzieło">
+    <!-- <?php /* website title */ ?> -->
+    <title>MGR HTML</title>
+    <meta name="description" content="meta description here" />
+    <link rel="icon" href="assets/img/favicon.png">
+    <!-- <?php /* website styles */ ?> -->
+    <link rel="stylesheet" href="assets/css/dist/main.css">
+    <!-- add script in head of your website -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+</head>
+<body>
+
+<div class="loader loader--loading">
+    <div class="loader__container">
+        <img src="assets/img/logo.png" alt="#" class="mb-20">
+        <i class="fas fa-spinner fa-pulse fa-3x"></i>
+    </div>
+</div>
+
+<header class="nav--primary sticky-top shadow-sm bg-primary" data-aos="fade-in">
+    <div class="navbar navbar-expand-lg py-20 pt-lg-20 pb-lg-0">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="./#">
+                <img src="assets/img/logo.png" alt="#">
+            </a>
+            <div class="d-none d-sm-block me-20 me-lg-0">
+                <a href="#" class="text-white ms-10"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="#" class="text-white ms-10"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="#" class="text-white ms-10"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="text-white ms-10"><i class="fas fa-envelope-square fa-2x"></i></a>
+            </div>
+            <div class="d-none d-lg-inline-flex text-end text-white">
+                <a href="#" class="ms-20 ms-xl-50">Call us on <strong>01234 567890</strong></a>
+                <a href="#" class="ms-20 ms-xl-50">Email us <strong>info@loremipsum.co.uk</strong></a>
+            </div>
+            <!-- Button trigger modal -->
+            <div class="d-lg-none ms-30">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="modal" data-bs-target="#header__nav--modal">
+                    <div class="toggler-line bg-white"></div>
+                    <div class="toggler-line bg-white"></div>
+                    <div class="toggler-line bg-white"></div>
+                    <div class="toggler-line bg-white"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-expand-lg p-0">
+        <div class="container">
+            <div id="header__nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav py-10 py-lg-0 w-100 justify-content-lg-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./#">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page--blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page--default.html">Default</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page--contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Modal -->
+<div id="header__nav--modal" class="modal modal-right fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="navbar-toggler" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    <div class="toggler-line bg-primary"></div>
+                    <div class="toggler-line bg-primary"></div>
+                    <div class="toggler-line bg-primary"></div>
+                    <div class="toggler-line bg-primary"></div>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="navbar">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./#">Homepage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page--blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page--default.html">Default</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page--contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="carousel--slider" data-aos="fade-in">
+    <div class="container-fluid p-0">
+        <div class="swiper-container swiper--style2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide h-auto text-center text-white">
+                    <div class="background">
+                        <img src="assets/img/image--1.jpg" alt="#1">
+                    </div>
+                    <div class="container text-center text-white" data-swiper-parallax="-1000">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 py-50 p-lg-100">
+                                <div class="display-4 mb-20">Voluptatibus veniam nemo laboriosam quo sed assumenda iure rerum rem itaque.</div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti debitis iure aliquid adipisci. Eveniet sint omnis voluptatem dolor quaerat cum? Labore, earum, officiis iusto itaque incidunt maxime natus blanditiis cumque, doloremque consectetur enim libero tenetur assumenda eligendi eaque nobis voluptas ullam corporis modi aliquam nam explicabo eos. Fugiat, culpa expedita! Tempora officia saepe exercitationem quae iste culpa a sint, iure error unde maiores ducimus ex quibusdam consectetur obcaecati temporibus, iusto asperiores voluptates commodi minus, eaque explicabo impedit!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide h-auto">
+                    <div class="background">
+                        <img src="assets/img/image--2.jpg" alt="#2">
+                    </div>
+                    <div class="container position-relative text-center text-white" data-swiper-parallax="-1000">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 py-50 p-lg-100">
+                                <div class="display-4 mb-20">Fugiat, culpa expedita!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper__pagination--style2"></div>
+        </div>
+    </div><!-- /.container -->
+</section>
+
+<section>
+    <div class="container-fluid p-0">
+        <div class="row row-cols-1 row-cols-md-3 g-0">
+            <div class="col" data-aos="fade-in">
+                <div class="card__box">
+                    <div class="card__box--image">
+                        <img src="assets/img/image--6.jpg" alt="#">
+                    </div>
+                    <div class="card__box--body px-30 py-50 text-center">
+                        <div class="position-relative">
+                            <div class="card__box--title">
+                                <div class="card__box--title__in">Lorem ipsum</div>
+                            </div>
+                            <button class="btn btn-light mt-25" type="button">Read more</button>
+                        </div>
+                    </div>
+                    <a href="#" aria-label="Lorem ipsum dolor sit amet consectetur adipisicing elit." class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-in">
+                <div class="card__box">
+                    <div class="card__box--image">
+                        <img src="assets/img/image--7.jpg" alt="#">
+                    </div>
+                    <div class="card__box--body px-30 py-50 text-center">
+                        <div class="position-relative">
+                            <div class="card__box--title">
+                                <div class="card__box--title__in">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            </div>
+                            <button class="btn btn-light mt-25" type="button">Read more</button>
+                        </div>
+                    </div>
+                    <a href="#" aria-label="Lorem ipsum dolor sit amet consectetur adipisicing elit." class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-in">
+                <div class="card__box">
+                    <div class="card__box--image">
+                        <img src="assets/img/image--8.jpg" alt="#">
+                    </div>
+                    <div class="card__box--body px-30 py-50 text-center">
+                        <div class="position-relative">
+                            <div class="card__box--title">
+                                <div class="card__box--title__in">Laboriosam quaerat autem nam ea voluptate, praesentium commodi reiciendis dolores. Similique, hic.</div>
+                            </div>
+                            <button class="btn btn-light mt-25" type="button">Read more</button>
+                        </div>
+                    </div>
+                    <a href="#" aria-label="Lorem ipsum dolor sit amet consectetur adipisicing elit." class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-50 py-lg-100 bg-primary position-relative" data-aos="fade-in">
+    <div class="section__background parallax">
+        <img src="assets/img/image--3.jpg" alt="#1" style="opacity:.1">
+    </div>
+    <div class="container position-relative">
+        <div class="row g-50 align-items-center">
+            <div class="col-12 col-lg-4 text-white">
+                <div class="h1 text-white">Contact form</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio error cum excepturi ullam, veritatis accusamus aliquid nostrum cupiditate illum odio temporibus.</p>
+            </div>
+            <div class="col">
+                <form>
+                    <div class="row g-15">
+                        <div class="col-12 col-md-4 col-lg">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Full name</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg">
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Telephone</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg">
+                            <div class="form-floating">
+                                <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg d-grid">
+                            <button type="submit" class="btn btn-light">Submit</button>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check form-control-sm py-0 m-0">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                <label class="form-check-label text-white" for="flexCheckDefault">Don’t miss out! Please tick this box if you would like to receive future offers, promotions & news from B4B. Please see our Privacy Policy for full Ts & Cs.</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- /.container -->
+</section>
+
+<section>
+    <div class="container-fluid p-0">
+        <div class="row row-cols-1 row-cols-md-2 flex-md-row-reverse align-items-center gx-60 mx-0">
+            <div class="col py-50 p-lg-100" data-aos="fade-left"> <!-- text-center -->
+                <h1>Image on left</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="assets/img/image--4.jpg" alt="#" class="col align-self-md-stretch p-0" style="object-fit:cover;" data-aos="fade-right">
+        </div>
+    </div>
+</section>
+
+<section class="py-50 py-lg-100 bg-primary position-relative" data-aos="fade-in">
+    <div class="section__background parallax">
+        <img src="assets/img/image--2.jpg" alt="#1" style="opacity:.1">
+    </div>
+    <div class="container position-relative text-center">
+        <div class="h1 text-white">Lorem ipsum dolor sit.</div>
+        <div class="mt-50 text-white">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam inventore optio recusandae eligendi voluptatem quis sapiente ratione excepturi pariatur incidunt provident rem, illo temporibus, necessitatibus aspernatur quam consequuntur architecto sunt.
+        </div>
+        <div class="d-grid col-12 col-md-6 col-lg-4 mt-50 mx-auto text-center px-md-5 px-lg-20">
+            <a href="#" class="btn btn-light">Contact</a>
+        </div>
+    </div><!-- /.container -->
+</section>
+
+<section>
+    <div class="container-fluid p-0">
+        <div class="row row-cols-1 row-cols-md-2 align-items-center gx-60 mx-0">
+            <div class="col py-50 p-lg-100" data-aos="fade-right"> <!-- text-center -->
+                <h1>Image on right</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio error cum excepturi ullam, veritatis accusamus aliquid nostrum cupiditate illum odio temporibus, quo distinctio dolorum tenetur mollitia nesciunt asperiores eveniet? Eaque animi accusamus repellendus facilis! Repellendus, cupiditate qui! Porro aliquid numquam, earum expedita delectus repellendus dolore nemo. Nesciunt, minima nisi.</p>
+            </div>
+            <img src="assets/img/image--5.jpg" alt="#" class="col align-self-md-stretch p-0" style="object-fit:cover;" data-aos="fade-left">
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="py-50 py-lg-100 bg-dark overflow-hidden position-relative" data-aos="fade-in">
+    <div class="section__background parallax">
+        <img src="assets/img/image--5.jpg" alt="#1" style="opacity:.1">
+    </div>
+    <div class="container position-relative">
+        <div class="h1 text-center mb-50 text-white">Case Studies</div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center g-30 g-lg-60">
+            <div class="col">
+                <div class="card__custom1 position-relative">
+                    <div class="card__custom1--image">
+                        <img src="assets/img/image--8.jpg" alt="#">
+                    </div>
+                    <div class="card__custom1--body px-30 py-25 bg-white">
+                        <div class="card__custom1--title mb-10 fw-bold text-decoration-none text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="card__custom1--text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, vitae amet soluta, laboriosam ipsam assumenda dolor eos blanditiis consectetur minus iusto modi quo ducimus alias aliquid. Sit architecto culpa repellat inventore corporis amet aut impedit placeat ratione odit, et voluptatum labore ipsa eveniet sunt, praesentium necessitatibus, asperiores saepe veritatis omnis. At, dolores aliquid commodi eos illo vitae cumque quia voluptatem amet ratione ducimus hic iure repudiandae? Placeat, iure nostrum modi eligendi quam provident sunt ut sed! Sequi nemo reiciendis quia quis eligendi. Sapiente, asperiores molestias dignissimos ratione, excepturi libero unde reprehenderit, laboriosam saepe ipsum dicta facilis magnam velit cumque est!</p>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card__custom1 position-relative">
+                    <div class="card__custom1--image">
+                        <img src="assets/img/image--9.jpg" alt="#">
+                    </div>
+                    <div class="card__custom1--body px-30 py-25 bg-white">
+                        <div class="card__custom1--title mb-10 fw-bold text-decoration-none text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="card__custom1--text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, vitae amet soluta, laboriosam ipsam assumenda dolor eos blanditiis consectetur minus iusto modi quo ducimus alias aliquid. Sit architecto culpa repellat inventore corporis amet aut impedit placeat ratione odit, et voluptatum labore ipsa eveniet sunt, praesentium necessitatibus, asperiores saepe veritatis omnis. At, dolores aliquid commodi eos illo vitae cumque quia voluptatem amet ratione ducimus hic iure repudiandae? Placeat, iure nostrum modi eligendi quam provident sunt ut sed! Sequi nemo reiciendis quia quis eligendi. Sapiente, asperiores molestias dignissimos ratione, excepturi libero unde reprehenderit, laboriosam saepe ipsum dicta facilis magnam velit cumque est!</p>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card__custom1 position-relative">
+                    <div class="card__custom1--image">
+                        <img src="assets/img/image--10.jpg" alt="#">
+                    </div>
+                    <div class="card__custom1--body px-30 py-25 bg-white">
+                        <div class="card__custom1--title mb-10 fw-bold text-decoration-none text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="card__custom1--text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, vitae amet soluta, laboriosam ipsam assumenda dolor eos blanditiis consectetur minus iusto modi quo ducimus alias aliquid. Sit architecto culpa repellat inventore corporis amet aut impedit placeat ratione odit, et voluptatum labore ipsa eveniet sunt, praesentium necessitatibus, asperiores saepe veritatis omnis. At, dolores aliquid commodi eos illo vitae cumque quia voluptatem amet ratione ducimus hic iure repudiandae? Placeat, iure nostrum modi eligendi quam provident sunt ut sed! Sequi nemo reiciendis quia quis eligendi. Sapiente, asperiores molestias dignissimos ratione, excepturi libero unde reprehenderit, laboriosam saepe ipsum dicta facilis magnam velit cumque est!</p>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+        <div class="d-grid col-12 col-md-6 col-lg-4 mt-50 mx-auto text-center px-md-5 px-lg-20">
+            <a href="#" class="btn btn-light">View all</a>
+        </div>
+    </div><!-- /.container -->
+</section>
+
+<section class="py-50 py-lg-100" data-aos="fade-in">
+    <div class="container text-center">
+        <h1>News</h1>
+    </div>
+    <div class="container mt-50">
+        <div class="grid grid__1">
+            <div class="card__custom2 grid__item b1 position-relative">
+                <div class="card__custom2--image">
+                    <img src="assets/img/image--1.jpg" alt="#">
+                </div>
+                <div class="card__custom2--body px-30 py-25 text-white">
+                    <div class="position-relative">
+                        <a href="#" class="card__custom2--title mb-10 fw-bold text-decoration-none">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, unde harum dolorem laboriosam hic pariatur minus nostrum quae accusamus blanditiis, rem alias, mollitia nobis dignissimos placeat! Commodi ratione iusto alias!</a>
+                        <div class="small text-white mb-15">
+                            <time datetime="2018-07-07">July 7</time>
+                        </div>
+                        <div class="card__custom2--text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, unde harum dolorem laboriosam hic pariatur minus nostrum quae accusamus blanditiis, rem alias, mollitia nobis dignissimos placeat! Commodi ratione iusto alias!
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="stretched-link"></a>
+            </div>
+            <div class="card__custom2 grid__item m1 position-relative">
+                <div class="card__custom2--image">
+                    <img src="assets/img/image--2.jpg" alt="#">
+                </div>
+                <div class="card__custom2--body px-30 py-25 text-white">
+                    <div class="position-relative">
+                        <a href="#" class="card__custom2--title mb-10 fw-bold text-decoration-none">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a>
+                        <div class="small text-white mb-15">
+                            <time datetime="2018-07-07">July 7</time>
+                        </div>
+                        <div class="card__custom2--text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, unde harum dolorem laboriosam hic pariatur minus nostrum quae accusamus blanditiis, rem alias, mollitia nobis dignissimos placeat! Commodi ratione iusto alias!
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="stretched-link"></a>
+            </div>
+            <div class="card__custom2 grid__item s1 position-relative">
+                <div class="card__custom2--image">
+                    <img src="assets/img/image--1.jpg" alt="#">
+                </div>
+                <div class="card__custom2--body px-30 py-25 text-white">
+                    <div class="position-relative">
+                        <a href="#" class="card__custom2--title mb-10 fw-bold text-decoration-none">Lorem ipsum dolor sit</a>
+                        <div class="small text-white mb-15">
+                            <time datetime="2018-07-07">July 7</time>
+                        </div>
+                        <div class="card__custom2--text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, unde harum dolorem laboriosam hic pariatur minus nostrum quae accusamus blanditiis, rem alias, mollitia nobis dignissimos placeat! Commodi ratione iusto alias!
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="stretched-link"></a>
+            </div>
+            <div class="card__custom2 grid__item s2 position-relative">
+                <div class="card__custom2--image">
+                    <img src="assets/img/image--2.jpg" alt="#">
+                </div>
+                <div class="card__custom2--body px-30 py-25 text-white">
+                    <div class="position-relative">
+                        <a href="#" class="card__custom2--title mb-10 fw-bold text-decoration-none">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, unde harum dolorem laboriosam hic pariatur minus nostrum quae accusamus blanditiis, rem alias, mollitia nobis dignissimos placeat! Commodi ratione iusto alias!</a>
+                        <div class="small text-white mb-15">
+                            <time datetime="2018-07-07">July 7</time>
+                        </div>
+                        <div class="card__custom2--text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, unde harum dolorem laboriosam hic pariatur minus nostrum quae accusamus blanditiis, rem alias, mollitia nobis dignissimos placeat! Commodi ratione iusto alias!
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="stretched-link"></a>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+</section>
+
+<footer data-aos="fade-in">
+    <div class="footer__top py-50 py-lg-100 position-relative">
+        <div class="section__background">
+            <img src="assets/img/image--1.jpg" alt="#1" style="opacity:.1">
+        </div>
+        <div class="container position-relative">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-30 g-md-60">
+                <div class="col">
+                    <a class="navbar-brand" href="/">
+                        <img src="assets/img/logo.png" alt="#">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui aliquam tempora assumenda labore libero ea quas omnis hic facilis?</p>
+                </div>
+                <div class="col">
+                    <div class="footer--heading">Lorem ipsum</div>
+                    <ul class="list-unstyled">
+                        <li><a href="page--blog.html">Default</a></li>
+                        <li><a href="page--default.html">Blog</a></li>
+                        <li><a href="page--contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="footer--heading">Lorem ipsum</div>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum dolor.</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, quod iusto itaque sed asperiores nam doloremque nulla quos maxime eligendi.</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="footer--heading">Lorem ipsum</div>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit amet consectetur.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom pt-30">
+        <div class="container">
+            <div class="row small justify-content-between">
+                <div class="col-sm-auto mb-15">COPYRIGHTS ©2020</div>
+                <div class="col-sm-auto mb-30">Web Design & Development by <a href="#">B4B</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="cookiealert" class="cookies__alert alert show d-none" role="alert">
+    <div class="container d-flex align-items-center">
+        <p><i class="fas fa-cookie-bite fa-lg me-5 text-primary">&nbsp;</i>By using our site, you acknowledge that you have read and understand our <a href="#" class="alert-link">Cookie Policy</a>, <a href="#" class="alert-link">Privacy Policy</a>, and our <a href="#" class="alert-link">Terms of Service</a>.</p>
+        <div class="ms-auto">
+            <button id="cookiealert--close" class="btn  ms-15" type="button" data-bs-dismiss="alert" aria-label="Close"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/dist/app.js"></script>
+
+<script>
+    var swiper = new Swiper('#carousel--slider .swiper-container', {
+        spaceBetween: 0,
+        parallax: true,
+        loop: true,
+        effect: 'fade',
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+    });
+    var swiper = new Swiper('#testimonials .swiper-container', {
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+        breakpoints: {
+            768: {
+                spaceBetween: 110,
+            },
+        },
+    });
+</script>
+
+</body>
+</html>
